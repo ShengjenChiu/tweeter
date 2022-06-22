@@ -37,14 +37,14 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="navbar">
       <span class="twe" >tweeter</span>
       <p>
         Write a new tweet
         <span class="fa-solid fa-angles-down"></span>
       </p>
     </nav>
-    <header>
+    <header class="pageHeader">
       <div class='img-div'>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -61,7 +61,7 @@
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
         <form class="tweet-entry" action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+          <label class="formLabel" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
 
           <div id="tweText">
@@ -70,14 +70,44 @@
 
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-          
+
         </form>
       </section>
 
-    </main>
-    
-  </body>
-  <footer>
+      <article class="artTweet box">
+        <header class="tweetHead">
+          <div id="headAvatar">
+            <span class="fa-solid fa-face-smile"></span>
+            <p>Newton</p>
+          </div>
+          <div id="headUser">
+            <p>
+              @SirIsaac
+            </p>
+          </div>
+        </header>
+        <div class="twTx">
+          <p>
+            If I have seen further it is by standing on the shoulders of giants.
+          </p>
 
-  </footer>
+        </div>
+        <footer class="tweetFoot">
+          <p id="daysAgo">
+            10 days ago.
+          </p>
+          <div class="smallIcon">
+            <span class="fa-solid fa-flag box"></span>
+            <span class="fa-solid fa-retweet box"></span>
+            <span class="fa-solid fa-heart box"></span>
+          </div>
+        </footer>
+      </article>
+    </main>
+
+
+
+
+  </body>
+
 </html>

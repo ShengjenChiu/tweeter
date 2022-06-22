@@ -31,8 +31,57 @@ div {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  /* font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; */
+
 }
 
+.artTweet {
+  margin-top: 30px;
+  background-color: #f4f1ec;
+
+  border: thick solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.tweetHead {
+  font-weight: lighter;
+  font-size: 10px;
+  font-family: 'Bungee', cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.twTx {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: 'Bungee', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.tweetFoot {
+  border-top: thick solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.smallIcon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.53em;
+}

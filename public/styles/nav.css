@@ -1,8 +1,6 @@
-/* nav, header, main {
-  position: absolute;
-} */
-
-nav {
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
   height: 120px; 
   width: 100% ;
   background-color: #4056A1;

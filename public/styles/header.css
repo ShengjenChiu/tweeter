@@ -1,5 +1,5 @@
 header {
-  z-index: 3;
+  z-index: 8;
   height: 400px;
   width: 100%;
   display: flex;
@@ -13,11 +13,13 @@ header {
 
 .img-div {
   position: relative;
-  top: 120px; 
+  top: 50px;
 }
 
 .h2-div {
   position: relative;
-  top: 80px; 
+  top: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
 }
 

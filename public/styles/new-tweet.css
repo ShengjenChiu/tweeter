@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+label {
+  font-family: 'Bungee', cursive;
+  font-size: 19px;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  font-size: 19px;
+}
+
+.button {
+  background-color: #4056A1;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; */
+}
+

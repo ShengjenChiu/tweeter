@@ -34,6 +34,8 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <!-- meta data-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
@@ -45,38 +47,37 @@
         <span class="fa-solid fa-angles-down"></span>
       </p>
     </nav>
-    <header class="pageHeader">
-      <div class='img-div'>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="h2-div">
-          <h2>Church</h2>
-      </div>
-    </header>
 
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+    <div class="containHM">
 
-      <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
-        <form class="tweet-entry" action="/tweets" method="POST">
-          <label class="formLabel" for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-
-          <div id="tweText">
-            
-            <button class="button" type="submit">Tweet</button>
-
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-
-        </form>
-      </section>
-
-      <section class="tweets-container"></section>
-
-    </main>
+      <header class="pageHeader">
+        <div class='img-div'>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div class="h2-div">
+            <h2>Church</h2>
+        </div>
+      </header>
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <!-- <h2>Compose Tweet</h2> -->
+          <form class="tweet-entry" action="/tweets" method="POST">
+            <label class="formLabel" for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+  
+            <div id="tweText">
+              <button class="button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+  
+          </form>
+        </section>
+        <section class="tweets-container"></section>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,23 +1,32 @@
-section {
+.container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.new-tweet {
   width: 100%;
 }
 
-form {
+.tweet-entry {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
 }
 
-label {
-  font-family: 'Bungee', cursive;
+.formLabel {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
 }
 
-div {
+#tweet-text {
+  width: 100%;
+}
+
+#tweText {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', cursive;
@@ -50,12 +59,13 @@ div {
 
 .tweetHead {
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 0.8em;
   font-family: 'Bungee', cursive;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1.2em;
   padding-left: 1.2em;
   padding-right: 1.2em;
 }
@@ -90,4 +100,18 @@ div {
   color: #D63301;
   background-color: #FFCCBA;
   /* background-image: url('https://i.imgur.com/GnyDvKN.png'); */
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .pageHeader {
+    width: 48%;
+    float: left;
+  }
+
+  .container {
+    width: 48%;
+    float: right;
+  }
+
 }

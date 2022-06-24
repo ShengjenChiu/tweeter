@@ -6,6 +6,5 @@ $(document).ready(function () {
   let $counter = $(this).parent().children('#tweText').children('.counter');
 
   $counter.text(charCounter);
-
   });
 });

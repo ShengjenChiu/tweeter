@@ -85,3 +85,9 @@ div {
   justify-content: space-around;
   font-size: 0.53em;
 }
+
+.validation{
+  color: #D63301;
+  background-color: #FFCCBA;
+  /* background-image: url('https://i.imgur.com/GnyDvKN.png'); */
+}

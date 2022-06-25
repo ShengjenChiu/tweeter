@@ -19,5 +19,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of ---"](---)
-!["Screenshot of ---"](https://github.com/ShengjenChiu/tinyapp/blob/main/docs/urls-page-before-login.png)
+!["Screenshot of Compact size Tweeter"](https://github.com/ShengjenChiu/tweeter/blob/master/docs/tweeterCompact.png)
+!["Screenshot of Desktop size Tweeter"](https://github.com/ShengjenChiu/tweeter/blob/master/docs/tweeterDestop.png)

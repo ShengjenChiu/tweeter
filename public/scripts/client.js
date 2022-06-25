@@ -3,14 +3,8 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-// document.addEventListener("click", printMousePos);
-// when textArea is clicked, run the function
-
 
 const renderTweets = function(tweets) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
   tweets.forEach(tweet => {
     const tweetElement = createTweetElement(tweet);
     $('.tweets-container').prepend(tweetElement); 
@@ -65,33 +59,23 @@ const createErrMsg = function (charCount) {
 
 $(document).ready(function() {
   $('form').on('submit', function (event) {
-    //console.log(event.target.text.value());
     event.preventDefault();
 
     const charCount = $(this).find('#tweet-text').val().length;
 
     if (charCount === 0) {
-      //alert('Error: do not sumbit empty tweet.');
       const errorMsg = createErrMsg(charCount);
       $('.new-tweet').slideDown(10000, () => {
         $('.new-tweet').prepend(errorMsg);
       });
       return false;
     } else if (charCount > 140) {
-      /*<button onclick="disableTxt()"></button>
-      function disableTxt() {
-        document.getElementById("myTextarea").disabled = true;
-      }
-      */
-      //alert('Error: you have exceed the maximum allowable length of the message.');
       const errorMsg = createErrMsg(charCount);
       $('.new-tweet').slideDown( 10000, () => {
         $('.new-tweet').prepend(errorMsg);
       });      
       return false;
     }
-
-    console.log("this is a try!");
 
     const escape = function (str) {
       let div = document.createElement("form");

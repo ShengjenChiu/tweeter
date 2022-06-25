@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Final Product
+
+!["Screenshot of ---"](---)
+!["Screenshot of ---"](https://github.com/ShengjenChiu/tinyapp/blob/main/docs/urls-page-before-login.png)

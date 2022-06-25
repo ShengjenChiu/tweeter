@@ -3,10 +3,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2em;
 }
 
 .new-tweet {
   width: 100%;
+  margin-top: 0.5em;
+
+}
+
+.tweets-container {
+  margin-top: 1em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 .tweet-entry {
@@ -20,10 +29,13 @@
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
+  font-weight: bold;
+  margin-left: 1.5em;
 }
 
 #tweet-text {
-  width: 100%;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 #tweText {
@@ -31,6 +43,8 @@
   justify-content: space-between;
   font-family: 'Bungee', cursive;
   font-size: 19px;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 .button {
@@ -40,8 +54,15 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
+  margin-top: 0.65em;
+  margin-left: 0.3em;
 }
+
+.counter {
+  margin-top: 0.7em;
+  margin-right: 0.3em;
+}
+
 
 .artTweet {
   margin-top: 30px;
@@ -104,13 +125,15 @@
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
+
   .pageHeader {
-    width: 48%;
+    width: 50%;
     float: left;
   }
 
   .container {
-    width: 48%;
+    margin-top: 3em;
+    width: 50%;
     float: right;
   }
 

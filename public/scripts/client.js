@@ -57,52 +57,56 @@ const createErrMsg = function (charCount) {
   return errMsg;
 }
 
+
 $(document).ready(function() {
-  $('form').on('submit', function (event) {
-    event.preventDefault();
-
-    const charCount = $(this).find('#tweet-text').val().length;
-
-    if (charCount === 0) {
-      const errorMsg = createErrMsg(charCount);
-      $('.new-tweet').slideDown(10000, () => {
-        $('.new-tweet').prepend(errorMsg);
-      });
-      return false;
-    } else if (charCount > 140) {
-      const errorMsg = createErrMsg(charCount);
-      $('.new-tweet').slideDown( 10000, () => {
-        $('.new-tweet').prepend(errorMsg);
-      });      
-      return false;
-    }
-
-    const escape = function (str) {
-      let div = document.createElement("form");
-      div.appendChild(document.createTextNode(str));
-      return div.innerHTML;
-    };
-
-    const serializedStr = $('form').serialize();
-    const safeHTML = escape(serializedStr);
-
-    $.ajax({
-      type: "POST",
-      url: "/tweets",
-      data: safeHTML,
-      datatype: "JSON",
-      success: loadTweets
-
-    });
-  });
+  $('form').on('submit', inComing);
 });
 
 
+const inComing = function(event) {
+  event.preventDefault();
+
+  const charCount = $(this).find('#tweet-text').val().length;
+
+  if (charCount === 0) {
+    const errorMsg = createErrMsg(charCount);
+    $('.new-tweet').slideDown(10000, () => {
+      $('.new-tweet').prepend(errorMsg);
+    });
+    return false;
+  } else if (charCount > 140) {
+    const errorMsg = createErrMsg(charCount);
+    $('.new-tweet').slideDown( 10000, () => {
+      $('.new-tweet').prepend(errorMsg);
+    });      
+    return false;
+  }
+
+  const escape = function (str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
+  const serializedStr = $(this).serialize();
+  const safeHTML = escape(serializedStr);
+  console.log(safeHTML)
+
+  $.ajax({
+    type: "POST",
+    url: "/tweets",
+    data: safeHTML,
+    datatype: "JSON",
+    success: loadTweets
+  });
+  
+};
+
 const loadTweets = function() {
+  $('#tweet-text').val('');
   $.ajax('/tweets', { method: 'GET' }).then((data) => {
     renderTweets(data);
   });
 };
 
 loadTweets();
-

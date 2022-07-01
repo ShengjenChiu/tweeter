@@ -6,7 +6,7 @@
 
 const renderTweets = function(tweets) {
   $('.tweets-container').empty();
-  
+
   tweets.forEach(tweet => {
     const tweetElement = createTweetElement(tweet);
     $('.tweets-container').prepend(tweetElement); 
@@ -16,11 +16,11 @@ const renderTweets = function(tweets) {
 const createTweetElement = function(tweet) {
   let tweetElement = `<article class="artTweet box">
         <header class="tweetHead">
-          <div id="headAvatar">
+          <div class="headAvatar">
             <img src="${tweet.user.avatars}" />
             <p>${tweet.user.name}</p>
           </div>
-          <div id="headUser">
+          <div class="headUser">
             <p>
             ${tweet.user.handle}
             </p>
@@ -36,9 +36,9 @@ const createTweetElement = function(tweet) {
           ${timeago.format(tweet.created_at)}.
           </p>
           <div class="smallIcon">
-            <span class="fa-solid fa-flag box"></span>
-            <span class="fa-solid fa-retweet box"></span>
-            <span class="fa-solid fa-heart box"></span>
+            <span class="fa-solid fa-flag icon"></span>
+            <span class="fa-solid fa-retweet icon"></span>
+            <span class="fa-solid fa-heart icon"></span>
           </div>
         </footer>
       </article>`;
@@ -109,8 +109,6 @@ const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET' }).then((data) => {
     renderTweets(data);
   });
-
-console.log('load tweet');
 
 };
 

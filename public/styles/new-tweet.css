@@ -1,15 +1,17 @@
 .container {
   width: 100%;
+
+  margin-top: 2em;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2em;
 }
 
 .new-tweet {
   width: 100%;
-  margin-top: 0.5em;
 
+  margin-top: 0.5em;
 }
 
 .tweets-container {
@@ -20,6 +22,7 @@
 
 .tweet-entry {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,9 +30,11 @@
 
 .formLabel {
   width: 100%;
+
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
   font-weight: bold;
+
   margin-left: 1.5em;
 }
 
@@ -39,23 +44,30 @@
 }
 
 #tweText {
-  display: flex;
-  justify-content: space-between;
   font-family: 'Bungee', cursive;
   font-size: 19px;
+
   margin-left: 1.2em;
   margin-right: 1.2em;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {
-  background-color: #4056A1;
-  border: none;
-  color: white;
+
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+
+  background-color: #4056A1;
+  color: white;
+
   margin-top: 0.65em;
   margin-left: 0.3em;
+  border: none;
+
+  display: inline-block;
+
 }
 
 .counter {
@@ -65,10 +77,12 @@
 
 
 .artTweet {
-  margin-top: 30px;
+
   background-color: #f4f1ec;
 
-  border: thick solid;
+  margin-top: 30px;
+  border: 0.2rem solid;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,48 +93,91 @@
 }
 
 .tweetHead {
+  width: 100%;
+
   font-weight: lighter;
   font-size: 0.8em;
   font-family: 'Bungee', cursive;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
   padding-top: 1.2em;
   padding-left: 1.2em;
   padding-right: 1.2em;
+ 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.headAvatar img {
+  width: 40px;
+  height: 40px;
+}
+
+.headAvatar p {
+  font-size: 1em;
+  font-weight: 50;
+}
+
+.headUser p {
+  font-size: 1em;
+  font-weight: 50;
 }
 
 .twTx {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 1em;
   font-family: 'Bungee', cursive;
+
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
 }
 
 .tweetFoot {
-  border-top: thick solid;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+
+  border-top: 0.2rem solid;
   padding-left: 1.2em;
   padding-right: 1.2em;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.tweetFoot p {
+  font-size: 0.5em;
+  font-weight: 5000;
+  margin-top: 0.75em;
 }
 
 .smallIcon {
+  font-size: 0.50em;
+
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  font-size: 0.53em;
+
+}
+
+.icon {
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+}
+
+.icon:hover {
+  color: burlywood;
 }
 
 .validation{
   color: #D63301;
   background-color: #FFCCBA;
-  /* background-image: url('https://i.imgur.com/GnyDvKN.png'); */
 }
 
 /* Desktop styles */
@@ -128,12 +185,15 @@
 
   .pageHeader {
     width: 50%;
+
     float: left;
   }
 
   .container {
-    margin-top: 3em;
     width: 50%;
+
+    margin-top: 4.3em;
+
     float: right;
   }
 

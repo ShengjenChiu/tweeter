@@ -17,6 +17,7 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+
   font-size: 24px;
   font-family: 'Bungee', cursive;
   font-family: 'Source Sans Pro', sans-serif;
@@ -32,14 +33,16 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
-   margin-top: 30px;
-   width: 90%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   background-color: #f4f1ec;
+main {
+  width: 90%;
+  background-color: #f4f1ec;
 
-   z-index: 6;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 6;
 }

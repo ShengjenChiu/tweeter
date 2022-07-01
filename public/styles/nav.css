@@ -1,16 +1,28 @@
 .navbar {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
   height: 65px; 
   width: 100% ;
-  background-color: #4056A1;
-  color: #FFFFFF;
+
+  background-color: #008c41;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  
   z-index: 10;
+}
+
+.icon_h {
+  color: red;
+}
+
+.icon_h:hover {
+  color: burlywood;
 }
 
 .twe {
@@ -22,3 +34,35 @@ p {
   font-size: 24px;
 }
 
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+  .navbar {
+    height: 65px; 
+    width: 100% ;
+  
+    background-color: #4056A1;
+    color: #FFFFFF;
+    
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    
+    z-index: 10;
+  }
+  
+  .twe {
+    font-family: 'Bungee', cursive;
+    font-size: 32px;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+
+}

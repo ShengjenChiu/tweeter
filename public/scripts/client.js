@@ -5,6 +5,8 @@
  */
 
 const renderTweets = function(tweets) {
+  $('.tweets-container').empty();
+  
   tweets.forEach(tweet => {
     const tweetElement = createTweetElement(tweet);
     $('.tweets-container').prepend(tweetElement); 
@@ -28,11 +30,10 @@ const createTweetElement = function(tweet) {
           <p>
             ${tweet.content.text}
           </p>
-
         </div>
         <footer class="tweetFoot">
           <p id="daysAgo">
-          ${timeago.format(new Date())}.
+          ${timeago.format(tweet.created_at)}.
           </p>
           <div class="smallIcon">
             <span class="fa-solid fa-flag box"></span>
@@ -90,7 +91,6 @@ const inComing = function(event) {
 
   const serializedStr = $(this).serialize();
   const safeHTML = escape(serializedStr);
-  console.log(safeHTML)
 
   $.ajax({
     type: "POST",
@@ -104,9 +104,14 @@ const inComing = function(event) {
 
 const loadTweets = function() {
   $('#tweet-text').val('');
+  $('.counter').text(140);
+
   $.ajax('/tweets', { method: 'GET' }).then((data) => {
     renderTweets(data);
   });
+
+console.log('load tweet');
+
 };
 
 loadTweets();

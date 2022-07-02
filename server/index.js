@@ -19,6 +19,7 @@ const DataHelpers = require("./lib/data-helpers.js")(db);
 require("./lib/date-adjust")();
 const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
+//bind tweets url withe routes
 app.use("/tweets", tweetsRoutes);
 
 //server start up and listening to the in coming request from client/user

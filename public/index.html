@@ -50,6 +50,7 @@
 
     <!-- container for both header and main elements -->
     <div class="containHM">
+
       <!-- header with avatar -->
       <header class="pageHeader">
         <div class='img-div'>
@@ -61,8 +62,10 @@
         </div>
       </header>
   
-      <!-- Page-specific (main) content here -->
+      <!-- Page-specific (main) content here -->        
       <main class="container">
+
+        <!-- The container for the static text entry area -->
         <section class="new-tweet">
           <form class="tweet-entry" action="/tweets" method="POST">
             <label class="formLabel" for="tweet-text">What are you humming about?</label>
@@ -74,9 +77,12 @@
             </div>
           </form>
         </section>
+
         <!-- The container for the dynamic new DOM tweets -->
         <section class="tweets-container"></section>
+
       </main>
+
     </div>
   </body>
 </html>

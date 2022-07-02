@@ -11,26 +11,32 @@ const renderTweets = function(tweets) {
 
 //helper function to create the DOM element of the tweeter message
 const createTweetElement = function(tweet) {
-  let tweetElement = `<article class="artTweet box">
+  let tweetElement = 
+      `<article class="artTweet box">
+
         <header class="tweetHead">
           <div class="headAvatar">
             <img src="${tweet.user.avatars}" />
-            <p>${tweet.user.name}</p>
+            <p>
+              ${tweet.user.name}
+            </p>
           </div>
           <div class="headUser">
             <p>
-            ${tweet.user.handle}
+              ${tweet.user.handle}
             </p>
           </div>
         </header>
+
         <div class="twTx">
           <p>
             ${tweet.content.text}
           </p>
         </div>
+
         <footer class="tweetFoot">
           <p id="daysAgo">
-          ${timeago.format(tweet.created_at)}.
+            ${timeago.format(tweet.created_at)}.
           </p>
           <div class="smallIcon">
             <span class="fa-solid fa-flag icon"></span>
@@ -38,12 +44,13 @@ const createTweetElement = function(tweet) {
             <span class="fa-solid fa-heart icon"></span>
           </div>
         </footer>
+
       </article>`;
 
   return tweetElement;
 }
 
-//error messages for cases of submissionb of empty text and oversized text
+//error messages for cases of submission of empty text and oversized text
 const createErrMsg = function (charCount) {
   let errMsg = '';
 

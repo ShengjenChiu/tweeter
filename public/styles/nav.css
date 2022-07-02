@@ -1,3 +1,4 @@
+/* style for the entire nav element*/
 .navbar {
   height: 65px; 
   width: 100% ;
@@ -17,26 +18,30 @@
   z-index: 10;
 }
 
+/* color for nav's double-angles-down icon*/
 .icon_h {
   color: red;
 }
 
+/* hover effect for nav's double-angles-down icon*/
 .icon_h:hover {
   color: burlywood;
 }
 
+/* style for nav's word 'tweeter'*/
 .twe {
   font-family: 'Bungee', cursive;
   font-size: 32px;
 }
 
+/* size for nav's word 'Write a new tweet'*/
 p {
   font-size: 24px;
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-
+  /* style for the entire nav element after the size of the browser window larger than 1024px*/
   .navbar {
     height: 65px; 
     width: 100% ;
@@ -56,11 +61,13 @@ p {
     z-index: 10;
   }
   
+  /* style for the word 'tweeter' of the nav element after the size of the browser window larger than 1024px*/
   .twe {
     font-family: 'Bungee', cursive;
     font-size: 32px;
   }
   
+  /* style for the words 'Write a new tweet' of the nav element after the size of the browser window larger than 1024px*/
   p {
     font-size: 24px;
   }

@@ -1,8 +1,4 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+/* Global layout for the entire webpage base */
 html {
   box-sizing: border-box;
 }
@@ -10,10 +6,8 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
+/* Global layout for the entire webpage's body element */
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -29,10 +23,7 @@ body {
 }
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
+/* style for the entire main section */
 main {
   width: 90%;
   background-color: #f4f1ec;

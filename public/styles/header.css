@@ -1,3 +1,4 @@
+/* style for the entire header element */
 .pageHeader {
   height: 470px;
   width: 100%;
@@ -14,18 +15,21 @@
   z-index: 8;
 }
 
+/* style for the header element's container of the picture of Mary Mansell */
 .img-div {
   margin-top: 5em;
   position: center;
   top: 50px;
 }
 
+/* style for the header element's the image of Mary Mansell */
 .img-div img {
   width: 190px;
   height: 190px;
   object-fit: cover;
 }
 
+/* style for the header element's container of the words of Mary Mansell */
 .h2-div {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -36,12 +40,14 @@
 
 }
 
+/* style for the header element's words of Mary Mansell */
 .h2-div h2 {
   font-size: 30px;
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
+  /* style for the entire header element after the size of the browser window larger than 1024px*/
   .pageHeader {
     height: 420px;
     width: 50%;
@@ -50,21 +56,25 @@
     margin-right: 0em;
   }
 
+  /* style for the header element's container of the picture of Mary Mansell after the size of the browser window larger than 1024px*/
   .img-div {
     margin-top: 3em;
     position: center;
   }
 
+  /* style for the header element's image of Mary Mansell after the size of the browser window larger than 1024px*/
   .img-div img {
     width: 235px;
     height: 235px;
     object-fit: cover;
   }
   
+  /* style for the header element's container of the words of "Mary Mansell" after the size of the browser window larger than 1024px*/
   .h2-div {
     margin-top: -3em;
   }
 
+  /* style for the header element's words of "Mary Mansell" after the size of the browser window larger than 1024px*/
   .h2-div h2 {
     top: 8px;
     font-size: 35px;

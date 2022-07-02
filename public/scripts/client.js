@@ -1,9 +1,5 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
+//helper function to create and prepend tweeter messsage to the DOM UI
+//one by one in real time.  
 const renderTweets = function(tweets) {
   $('.tweets-container').empty();
 
@@ -13,6 +9,7 @@ const renderTweets = function(tweets) {
   });
 }
 
+//helper function to create the DOM element of the tweeter message
 const createTweetElement = function(tweet) {
   let tweetElement = `<article class="artTweet box">
         <header class="tweetHead">
@@ -46,6 +43,7 @@ const createTweetElement = function(tweet) {
   return tweetElement;
 }
 
+//error messages for cases of submissionb of empty text and oversized text
 const createErrMsg = function (charCount) {
   let errMsg = '';
 
@@ -58,12 +56,12 @@ const createErrMsg = function (charCount) {
   return errMsg;
 }
 
-
+//main function for the tweet message submission
 $(document).ready(function() {
   $('form').on('submit', inComing);
 });
 
-
+//helper function for the main function for the tweet message submission
 const inComing = function(event) {
   event.preventDefault();
 
@@ -102,6 +100,8 @@ const inComing = function(event) {
   
 };
 
+//helper function to load tweets and empty the input text area after submission
+//and set the character counter back to 140 after submission
 const loadTweets = function() {
   $('#tweet-text').val('');
   $('.counter').text(140);

@@ -1,3 +1,5 @@
+/* style for the entire main element
+*/
 .container {
   width: 100%;
 
@@ -8,18 +10,24 @@
   justify-content: center;
 }
 
+/* style for the entire section element of the input text area
+*/
 .new-tweet {
   width: 100%;
 
   margin-top: 0.5em;
 }
 
+/* style for the entire section element of the dynamic new tweet DOM
+*/
 .tweets-container {
   margin-top: 1em;
   margin-left: 1.2em;
   margin-right: 1.2em;
 }
 
+/* style for the entire form element
+*/
 .tweet-entry {
   width: 100%;
 
@@ -28,6 +36,8 @@
   justify-content: space-around;
 }
 
+/* style for the label element of the words of "What are you humming about?"
+*/
 .formLabel {
   width: 100%;
 
@@ -38,11 +48,15 @@
   margin-left: 1.5em;
 }
 
+/* style for the text area element
+*/
 #tweet-text {
   margin-left: 1.2em;
   margin-right: 1.2em;
 }
 
+/* style for the container of both the blue Tweet buttom element and the counter
+*/
 #tweText {
   font-family: 'Bungee', cursive;
   font-size: 19px;
@@ -54,6 +68,8 @@
   justify-content: space-between;
 }
 
+/* style for ther blue Tweet buttom
+*/
 .button {
 
   text-align: center;
@@ -70,12 +86,15 @@
 
 }
 
+/* style for the counter
+*/
 .counter {
   margin-top: 0.7em;
   margin-right: 0.3em;
 }
 
-
+/* style for the entire container of the new DOM tweet
+*/
 .artTweet {
 
   background-color: #f4f1ec;
@@ -88,10 +107,13 @@
   align-items: center;
 }
 
+/* hover effect for the entire container of the new DOM tweet
+*/
 .box:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
+/* style for the header container for both new tweet's face image and its handle*/
 .tweetHead {
   width: 100%;
 
@@ -110,21 +132,25 @@
 
 }
 
+/* style for the the new tweet's face image */
 .headAvatar img {
   width: 40px;
   height: 40px;
 }
 
+/* style for the the new tweet's face image and its user name*/
 .headAvatar p {
   font-size: 1em;
   font-weight: 50;
 }
 
+/* style for the the new tweet's face image's handle */
 .headUser p {
   font-size: 1em;
   font-weight: 50;
 }
 
+/* style for the the new tweet's text message */
 .twTx {
   font-weight: normal;
   font-size: 1em;
@@ -138,6 +164,7 @@
   justify-content: flex-start;
 }
 
+/* style for the entire container of both of the new tweet's timestamp and the three small icons */
 .tweetFoot {
   width: 100%;
 
@@ -150,12 +177,14 @@
 
 }
 
+/* style for the entire container of both of the new tweet's time ago and the three small icons */
 .tweetFoot p {
   font-size: 0.5em;
   font-weight: 5000;
   margin-top: 0.75em;
 }
 
+/* style for the container of new tweet's three small icons */
 .smallIcon {
   font-size: 0.50em;
 
@@ -165,30 +194,34 @@
 
 }
 
+/* style for new tweet's three small icons indivudially */
 .icon {
   margin-top: 0.2em;
   margin-right: 0.2em;
   margin-left: 0.2em;
 }
 
+/* hover effect of new tweet's three small icons indivudially */
 .icon:hover {
   color: burlywood;
 }
 
-.validation{
+/* style of new tweet's error message */
+.validation {
   color: #D63301;
   background-color: #FFCCBA;
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-
+  /* style for the entire header element after the size of the browser window larger than 1024px*/
   .pageHeader {
     width: 50%;
 
     float: left;
   }
 
+  /* style for the entire main element after the size of the browser window larger than 1024px*/
   .container {
     width: 50%;
 

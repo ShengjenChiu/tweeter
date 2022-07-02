@@ -1,3 +1,4 @@
+//The function handles the counter digits appearence on the DOM UI in real time
 $(document).ready(function () {
   $("#tweet-text").on("input", function () {
     let charLength = $(this).val().length;
@@ -6,6 +7,10 @@ $(document).ready(function () {
   
     if (charCounter <= 0) {
       $counter.text(charCounter).css("color", "red");
+    } 
+
+    if (!$(this).val()) {
+      $counter.text(charCounter).css("color", "black");
     }
 
     $counter.text(charCounter);

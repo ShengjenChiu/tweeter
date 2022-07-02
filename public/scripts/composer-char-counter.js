@@ -9,6 +9,10 @@ $(document).ready(function () {
       $counter.text(charCounter).css("color", "red");
     } 
 
+    if (charCounter > 0) {
+      $counter.text(charCounter).css("color", "black");
+    } 
+
     if (!$(this).val()) {
       $counter.text(charCounter).css("color", "black");
     }
